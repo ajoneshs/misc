@@ -4,7 +4,7 @@ shakespeare = open("shakespeare.txt", "r").read()
 # shakespeare.txt comes from https://ocw.mit.edu/ans7870/6/6.006/s08/lecturenotes/files/t8.shakespeare.txt
 
 # time in seconds
-target_time = 200
+target_time = 600
 
 method1_total_time = 0
 method1_attempts = 0
@@ -66,3 +66,26 @@ print(f"method 2: {method2_total_time / method2_attempts}")
 print("raw times:")
 print(f"method 1: {method1_total_time}")
 print(f"method 2: {method2_total_time}")
+
+
+# no clear winner
+
+'''
+200 seconds
+avg time per attempt:
+method 1: 0.4947758088720606
+method 2: 0.49570812823924615
+raw times:
+method 1: 93.01785206794739
+method 2: 93.19312810897827
+'''
+
+'''
+600 seconds
+avg time per attempt:
+method 1: 0.49259507107775297
+method 2: 0.488302252361681
+raw times:
+method 1: 289.153306722641
+method 2: 286.63342213630676
+'''
